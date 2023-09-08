@@ -7,8 +7,143 @@
 
 body {
     background: #555555;
-    margin: 50px 2%;
+    
 }
+
+
+/* Navbar */
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #646161; */
+    color: #ffff;
+   
+   top: 0;
+   background: #1C1C1C;
+   position: sticky;
+  
+    
+}
+
+.navbar > .logo
+{
+    display: flex;
+    margin: 15px;
+    align-items: center;
+  
+    
+    
+}
+
+.navbar > .logo > h2
+{
+    
+    margin-left: 15px;
+}
+
+.navbar > .logo > img
+{
+    max-width: 80px;
+    max-width: 80px;
+    border-radius: 50%;
+    border: 3px solid #646161;
+    box-shadow: 0 0 20px slid black;
+    
+}
+
+.nav_links > ul
+{
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    padding-right: 60px;
+    flex-grow: 2;
+    
+    
+}
+
+.nav_links li
+{
+    list-style-type: none;
+    font-size: 30px;
+
+}
+
+.nav_links li a
+{
+    text-decoration: none;
+    color: #ffff;
+    padding: 1rem;
+    display: block;
+    
+}
+
+.nav_links li a:hover
+{
+    background-color: #21497e7c;
+    border-radius: 6px;
+
+}
+
+
+/* navresponsive */
+@media only screen and (max-width: 600px){
+
+    .navbar{
+        display: inline-block;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: #1C1C1C
+    }
+
+    body{
+        height: 100vh;
+        
+    }
+
+    .logo{
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 3;
+        flex-basis: 100px;
+    }
+
+    .logo img
+    {
+        margin-right: 13px;
+    }
+
+    .logo h2
+    {
+        margin-right: 40px;
+    }
+
+    .toggle
+    {
+        display: flex;
+        margin-top: 40px;
+    }
+
+
+    .nav_links
+    {
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin-left: 10%;
+        flex-shrink: 3;
+        display: none;
+    }
+
+}
+
+/* Main Body */
 
 /* container title */
 .container-title {
@@ -17,6 +152,7 @@ body {
     margin: 0 0 30px 0;
     color: white;
     text-shadow: 3px 1px black;
+    padding-top: 60px;
 }
 
 /* container */
